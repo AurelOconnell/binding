@@ -7,5 +7,5 @@
 <input type="text" [(ngModel)]="user.quote">
 
 <button *ngIf="!showAge" (click)="showAge = true">Voir l'age</button>
-    <p>Age : {{ user.age }}</p>
+    <p *ngIf="showAge">Age : {{ user.age }}</p>
 <button *ngIf="showAge" (click)="showAge = false">Cacher l'age</button>
