@@ -7,8 +7,5 @@
 <input type="text" [(ngModel)]="user.quote">
 
 <button *ngIf="!showAge" (click)="showAge = true">Voir l'age</button>
-<button *ngIf="!showAge" (click)="showAge = false">Cacher l'age</button>
-
-<ng-container *ngIf="showAge">
     <p>Age : {{ user.age }}</p>
-</ng-container>
+<button *ngIf="showAge" (click)="showAge = false">Cacher l'age</button>
